@@ -67,7 +67,7 @@ body {
   -moz-border-radius: 3px;
   border-radius: 3px;
   width: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .card:hover {
   cursor: pointer;
@@ -98,10 +98,15 @@ body {
   font-size: 20px;
   font-weight: 400;
   cursor: default;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .card .info {
   padding: 10px;
   height: 130px;
+  overflow: hidden;
 }
 .card .footer {
   border-top: 1px solid #f4f4f4;
@@ -157,8 +162,4 @@ body {
   color: white;
   background-color: #f56956;
   background-image: none;
-}
-.list-group-item.break {
-  padding: 1px;
-  background-color: #808080;
 }
